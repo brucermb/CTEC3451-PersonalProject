@@ -35,8 +35,8 @@
       <ul class="navigation">
         <li><a href="index.php">Home</a></li>
         <li><a href="custom-processor.php">Custom Builds</a></li>
-        <li><a href="#">Prebuilds</a></li>
-        <li><a href="#">About</a></;li>
+        <li><a href="prebuilds.php">Prebuilds</a></li>
+        <li><a href="about.php">About</a></li>
       </ul>
     </nav>
   </header>
@@ -227,10 +227,10 @@
   <hr>
   <ul class="footerSitemap">
     <li><p><b>Sitemap</b></p></li>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Custom Builds</a></li>
-    <li><a href="#">Prebuilds</a></li>
-    <li><a href="#">About</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="custom-processor.php">Custom Builds</a></li>
+    <li><a href="prebuilds.php">Prebuilds</a></li>
+    <li><a href="about.php">About</a></li>
   </ul>
 </div>
 

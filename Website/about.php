@@ -34,33 +34,9 @@
   </header>
 <!-- Main content of the website starts here  -->
 <main>
-  <h3>Our Recommended Prebuilt Configurations</h3>
+  <h3>About</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<hr>
-<div class="articleContainer">
-  <div class="articleCard">
-    <h4>High End AMD</h4>
-    <hr>
-    <?php
-    $amdsql="SELECT * FROM motherboard WHERE Socket = '$selected' ";
-     ?>
-     <table>
-       <th>Component</th>
-       <th>Name</th>
-       <td></td>
-     </table>
-
-    <br>
-  </div>
-
-  <div class="articleCard">
-    <h4>High End Intel</h4>
-    <hr>
-    <p>Our team have selected 6 different recomended specifications so you can get to building as soon as possible
-    Featuring three different AMD and Intel configurations across all price points<br>
-  Entry level, medium specification and High end!</p>
-
-  </div>
 </div>
 <br><br><br><br><br><br>
   </main>
