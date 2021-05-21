@@ -1,0 +1,241 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #747474;
+}
+
+p, a, h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+}
+
+h1 span {
+  color: red;
+}
+
+h2 {
+
+}
+
+h3 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 40px;
+  align-self: flex-start;
+}
+
+
+header {
+  display: flex;
+  background-color: #272727;
+  height: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 1%;
+  overflow: hidden;
+}
+
+#menuToggler {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 1;
+  margin-right: 5px;
+  font-size: 75px;
+  font-weight: bolder;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.navigation li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navigation li a:hover {
+  transition: all 0.3s ease 0s;
+  color: red;
+}
+
+nav {
+  display: none;
+}
+
+nav.open {
+  display: flex;
+  position: fixed;
+  overflow: none;
+  height: 100%;
+  width: 100%;
+  transform: translateX(0);
+  background-color: rgba(0,0,0, 0.9);
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+nav.open li {
+    display: block;
+}
+
+
+.about {
+  display: grid;
+  background-image: url('../images/build.png');
+  background-size: auto;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.about article {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2%;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  background-color: #272727;
+  height: 5vh;
+  font-size: 20px;
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerContainer{
+  display: flex;
+  width: 98%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+button {
+  box-shadow:inset 0px 39px 0px -24px #e67a73;
+  background-color:#e4685d;
+  border-radius:4px;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+
+.footerSitemap{
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer li {
+  list-style: none;
+  text-align: right;
+}
+
+footer li a {
+  transition: all 0.3s ease 0s;
+}
+
+footer li a:hover {
+  transition: all 0.3s ease 0s;
+  color: red;
+}
+
+.articleContainer {
+  display: flex;
+}
+
+.articleCard {
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #000000;
+  width: 25%;
+  background-color: #616161;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+  /* applies to screens wider than 499px */
+
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(0vw);
+    transition: 0s;
+    position: static;
+    justify-content: flex-end;
+
+  }
+
+  .navigation li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  header {
+    padding-right: 0;
+  }
+
+
+
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+  /* applies to screens wider than 999px */
+
+}
